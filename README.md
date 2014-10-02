@@ -2,13 +2,21 @@
 
 ## Description
 
-`css_background` is a [django-cms](https://github.com/divio/django-cms) plugin which allow you to edit css background image or color from the edit mode
+`djangocss_background` is a [django-cms](https://github.com/divio/django-cms) plugin which allow you to edit css background image or color from the edit mode
 
 ## Depends
 
 - [django-cms](https://github.com/divio/django-cms)
-- [cms_placeholder_attr](https://github.com/WnP/cms_placeholder_attr)
+- [djangocms_placeholder_attr](https://github.com/WnP/cms_placeholder_attr)
 - [django-filer](https://github.com/stefanfoulis/django-filer)
+
+
+## Installation
+
+* Download the source and run `python setup.py install`
+* Syncronize the models: `python manage.py syncdb` (with south or django 1.7 use migrations)
+* Put in your INSTALLED_APPS: `INSTALLED_APPS += ('djangocms-css-background', )`
+
 
 ## Usage
 
@@ -21,5 +29,7 @@ you can define your template like this:
   {% placeholder 'My Background Css Placeholder' %}
 </div>
 ```
+
+remember to set the same name of a placeholder in the placeholder_attr name parameter.
 
 after that set the provide a `CSS Background` plugin for this placeholder, and chose an image, or set rgb or rgba for a colored background

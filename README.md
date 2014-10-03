@@ -2,18 +2,18 @@
 
 ## Description
 
-`djangocss_background` is a [django-cms](https://github.com/divio/django-cms) plugin which allow you to edit css background image or color from the edit mode
+`djangocms-css-background` is a [django-cms](https://github.com/divio/django-cms) plugin which allow you to edit css background image or color from the edit mode
 
 ## Depends
 
 - [django-cms](https://github.com/divio/django-cms)
-- [djangocms_placeholder_attr](https://github.com/WnP/cms_placeholder_attr)
+- [djangocms-placeholder-attr](https://github.com/WnP/cms_placeholder_attr)
 - [django-filer](https://github.com/stefanfoulis/django-filer)
 
 
 ## Installation
 
-* Download the source and run `python setup.py install`
+* use pip `pip install djangocms-css-background`
 * Syncronize the models: `python manage.py syncdb` (with south or django 1.7 use migrations)
 * Put in your INSTALLED_APPS: `INSTALLED_APPS += ('djangocms-css-background', )`
 

@@ -12,7 +12,7 @@ except (IOError, ImportError):
 
 setup(
     name='djangocms-css-background',
-    version='1.0.1b',
+    version='1.0.1',
     license='MIT',
     description='A django-cms plugin which allow you to edit css background image or color from the edit mode',
     long_description=description,
@@ -21,8 +21,12 @@ setup(
     include_package_data=True,
     url='https://github.com/WnP/djangocms-css-background',
     packages=find_packages(),
+    install_requires=[
+        'django-cms>=3.0.5',
+        'djangocms-placeholder-attr>=1.0.2',
+    ],
     classifiers=[
-        'Development Status :: 4 - Beta',
+        'Development Status :: 5 - Production/Stable',
         'Environment :: Web Environment',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: MIT License',

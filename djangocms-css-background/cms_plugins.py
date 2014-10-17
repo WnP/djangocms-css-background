@@ -1,5 +1,6 @@
 from cms.plugin_base import CMSPluginBase
 from cms.plugin_pool import plugin_pool
+from random import randint
 import time
 import models
 
@@ -20,7 +21,7 @@ class CssBackgroundPlugIn(CMSPluginBase):
             'instance': instance,
             'time': '-'.join([
                 str(instance.id),
-                str(instance.image.id),
+                str(randint(0, 100000) if not instance.image else instance.image.id),
                 repr(time.time()).replace('.', '_')]),
         })
         return context

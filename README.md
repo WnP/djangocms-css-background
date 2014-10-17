@@ -23,7 +23,7 @@
 you can define your template like this:
 
 ```django
-{% load placeholder_tags placeholder_attr %}
+{% load placeholder_attr %}
 
 <div style="{% placeholder_attr 'My Background Css Placeholder' 'CssBackground' 'css_background' %}">
   {% placeholder 'My Background Css Placeholder' %}

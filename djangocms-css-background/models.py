@@ -28,13 +28,6 @@ class CssBackground(CMSPlugin):
         from django.core.exceptions import ValidationError
         if self.bg_type == 'image' and not self.image:
             raise ValidationError('You must select an image')
-        elif self.bg_type == 'rgb' and (
-                not self.r or not self.g or not self.b):
-            raise ValidationError('You must provide "r", "g" and "b" values')
-        elif self.bg_type == 'rgba' and (
-                not self.r or not self.g or not self.b):
-            raise ValidationError(
-                'You must provide "r", "g", "b" and "a" values')
 
     @property
     def css_background(self):

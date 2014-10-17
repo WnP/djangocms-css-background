@@ -57,7 +57,7 @@ class CssBackground(CMSPlugin):
         elif self.bg_type == 'rgba':
 
             return ''.join([
-                'background-color: rgb(',
+                'background-color: rgba(',
                 str(self.r), ',',
                 str(self.g), ',',
                 str(self.b), ',',

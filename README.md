@@ -1,3 +1,6 @@
+**Deprecated**: No longer maintained
+Please consider forking this repository, should works on python2 but doesn't works on python3
+
 # CSS Background
 
 ## Description
